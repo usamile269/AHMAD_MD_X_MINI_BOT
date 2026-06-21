@@ -1,15 +1,14 @@
 {
   "name": "ahmed-mini-bot",
-  "version": "1.0.0",
-  "description": "Ahmed Mini WhatsApp Bot - Simple & Lightweight",
+  "version": "2.0.0",
+  "description": "Ahmed Mini WhatsApp Bot",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "engines": {
-    "node": "20.x"
+    "node": ">=20.0.0"
   },
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node index.js"
   },
   "keywords": [
     "whatsapp",
@@ -19,16 +18,14 @@
   "author": "Ahmed-MD",
   "license": "MIT",
   "dependencies": {
+    "@hapi/boom": "^10.0.1",
     "@whiskeysockets/baileys": "^7.0.0-rc.10",
-    "axios": "^1.6.8",
-    "chalk": "^4.1.2",
-    "dotenv": "^16.4.5",
+    "axios": "^1.7.7",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "fs-extra": "^11.3.0",
     "pino": "^9.5.0",
-    "qrcode-terminal": "^0.12.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
+    "qrcode": "^1.5.4"
   }
 }
